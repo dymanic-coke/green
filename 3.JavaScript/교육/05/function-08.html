@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            //나머지 매개변수
+            //나머지 매개변수는 배열은 아니나 배열처럼 쓰이고 보임
+            function ex(...a){
+                let b = a[0]
+                for(const c of a){
+                    if(b > c){
+                        b = c
+                    }
+                }
+                return b
+            }
+
+            console.log('[1, 20, 53, 23, 44] 다음 중')
+            console.log(`최소값 = ${ex(1, 20, 53, 23, 44)}`)
+        </script>
+    </head>
+</html>

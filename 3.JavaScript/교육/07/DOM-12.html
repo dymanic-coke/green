@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let count =0
+            let connect = false
+
+            const h = document.querySelector('h1')
+            const p = document.querySelector('p')
+            const cntbutton = document.querySelector('#cnt')
+            const dcntbutton = document.querySelector('#dcnt')
+
+            const action = function(event){
+                h.textContent = `클릭횟수 : ${count++}`
+            }
+
+            cntbutton.addEventListener('click',function(){
+                if(connect === false){
+                    h.addEventListener('click', action)
+                    p.textContent = '이벤트 연결 상태 : 작동중'
+                    connect = true
+                }
+            })
+            dcntbutton.addEventListener('click',function(){
+                if(connect === true){
+                    h.removeEventListener('click', action)
+                    p.textContent = '이벤트 연결 상태 : 해제'
+                    h.textContent = `클릭횟수 : 0`
+                    count = 0
+                    connect = false
+                }
+            })
+
+        })
+    </script>
+    <style>
+        h1{
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>클릭횟수 : 0</h1>
+    <button id="cnt">이벤트 연결</button>
+    <button id="dcnt">이벤트 해제</button>
+    <p>이벤트 연결 상태 : 해제</p>
+</body>
+</html>

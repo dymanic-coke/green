@@ -1,0 +1,19 @@
+<html>
+    <script>
+        const a = prompt('알파벳 한개를 입력하세요')
+
+        // if(a === a.toUpperCase()){
+        //     console.log('YES')
+        // }else{
+        //     console.log('NO')
+        // }
+            const char = a.charCodeAt()
+        if(char >= 65 && char<=90){
+            console.log('YES')
+        } else if(char>= 97 && char<=122){
+            console.log('NO')
+        } else{
+            console.log('잘못입력하셨습니다.')
+        }
+    </script>
+</html>

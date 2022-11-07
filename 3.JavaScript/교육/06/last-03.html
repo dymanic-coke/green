@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            const f = {
+                name : '혼자 공부하는 파이썬',
+                price : 18000,
+                publisher : '한빛미디어'
+            }
+
+            //객체 변수 추출
+            const {name, price} = f
+            console.log('속성의 이름 그대로 꺼내기')
+            console.log(name, price)
+            console.log('')
+
+            const {z = name, y = price} = f
+            console.log('임의의 속성명을 정해 속성 변수 출력')
+            console.log(z,y)
+        </script>
+    </head>
+</html>

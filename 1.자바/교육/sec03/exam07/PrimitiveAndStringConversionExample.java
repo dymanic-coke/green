@@ -1,0 +1,31 @@
+package sec03.exam07;
+
+public class PrimitiveAndStringConversionExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		int value1 = Integer.parseInt("10");
+		double value2 = Double.parseDouble("3.14");
+		boolean value3 = Boolean.parseBoolean("true");
+		
+		System.out.println("value1:\t" + value1);
+		System.out.println("value2:\t" + value2);
+		System.out.println("value3:\t" + value3);
+		
+		String str1 = String.valueOf(10);
+		String str2 = String.valueOf(3.14);
+		String str3 = String.valueOf(true);
+		
+		System.out.println("str1:\t" + str1);
+		System.out.println("str2:\t" + str2);
+		System.out.println("str3:\t" + str3);
+		
+		
+		int x = 10;
+		String x1 = String.valueOf(x);
+		System.out.println(x1);
+			
+	}
+
+}

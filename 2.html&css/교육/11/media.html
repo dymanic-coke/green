@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸른바닷가</title>
+    <style>
+        #container{
+            position: relative;
+            text-align: center;
+            margin-top: 400px;
+            color: white;
+        }
+        h2{
+            font-size: 2em;
+        }
+        h1{
+            font-size: 3.5em;
+
+        }
+        #container a:link,#container a:visited{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+        #navi{
+            font-size: 1.3em;
+            padding-left: 0;
+        
+        }
+        #navi li{
+            display: inline;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        #beach{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -100;
+            background: url(beach.jpg) no-repeat left top;
+            background-size: cover;
+        }
+        aside{
+            float: right;
+            border: 1px solid black;
+            position: fixed;
+            right: 2px;
+            top: 30px;
+            background-color: white;
+        
+        }
+        aside ul{
+            list-style-type: none;
+            margin-right: 10px;
+            width: 80px;
+            padding-left: 10px;
+        }
+        aside ul li{
+            margin-bottom: 15px;
+            background-color: blue;
+            text-align: center;
+        }
+        .navi2 a:link, .navi2 a:visited{
+            text-decoration: none;
+            color: white;
+        }
+        .navi2 a:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <video src="Beach.mp4" autoplay loop muted poster="beach.jpg" id="beach"></video>
+    <div id="container">
+        <h2>세계 최고의 여행장소</h2>
+        <h1><a href="https://www.visitjeju.net/kr" target="_blank">제주아일랜드</a></h1>
+        <nav>
+            <ul id="navi">
+                <li><a href="map2.png" target="_blank">여행지도</a></li>
+                <li><a href="https://www.visitjeju.net/kr/detail/list?menuId=DOM_000001718000000000&cate1cd=cate0000000002#p1&pageSize=12&sortListType=reviewcnt&viewType=map&isShowBtag&tag" target="_blank">관광지</a></li>
+                <li><a href="https://www.visitjeju.net/kr/detail/list?menuId=DOM_000001719000000000&cate1cd=cate0000000005#p1&pageSize=12&sortListType=reviewcnt&viewType=map&isShowBtag&tag" target="_blank">음식</a></li>
+            </ul>
+        </nav>
+    </div>
+    <aside class="navi2">
+        <ul>
+            <li><a href="map2.PNG" target="_blank">여행지도</a></li>
+            <li><a href="map2.png"target="_blank">관광지</a></li>
+            <li><a href="map2.png"target="_blank">음식</a></li>
+        </ul>
+    </aside>
+</body>
+</html>

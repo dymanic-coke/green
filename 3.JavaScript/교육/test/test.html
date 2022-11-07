@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 10px;
+        }
+        header{
+            width: 100%;
+            height: 150px;
+           margin: 5px;
+           border: 1px solid green;
+           background-color: lightblue;
+           text-align: center;
+           display: inline-block;
+        }
+        #logo{
+            float: left;
+            width: 500px;
+            height: 85px;
+            border: 1px solid gray;
+            background-color: white;
+            margin-top: 25px;
+            margin-left: 5px;
+            padding: 10px;
+        }
+        #logo div{
+            float: left;
+            width: 150px;
+            height: 70px;
+            text-align: center;
+            color: green;
+            border: 1px solid green;
+            font-size: 20px;
+            margin: 5px 10px;
+            display: inline-block;
+
+        }
+        #logo h2{
+            margin-top: 15px;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            margin: 5px;
+            border: 1px solid green;
+        }
+        section{
+            float: left;
+            width: 70%;
+            height: 250px;
+            margin: 5px 5px;
+            border: 1px solid green;
+            background: url(mute.png) no-repeat;
+            background-size: cover;
+        }
+        aside{
+            float: right;
+            width: 25%;
+            height: 250px;
+            background-color: yellow;
+            border: 1px solid green;
+
+        }
+        footer{
+            clear: both;
+            width: 100%;
+            height: 180px;
+            border: 1px solid green;
+            margin: 5px 5px;
+            background-color: lightblue;
+            display: inline-block;
+
+        }
+        #top{
+            float: right;
+            margin-top: 60px;
+            margin-right: 50px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        #top ul{
+            list-style-type: none;
+        }
+        ul li{
+            display: inline-block;
+            margin: 5px;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: red;
+        }
+        ul #li1,#li2,#li3{
+            border-right: 1px solid black;
+            padding-right: 10px;
+        }
+        header #logotext{
+            font-size: 15px;
+            color: gray;
+            margin-top: 60px;
+            text-align: right;
+            display: inline-block;
+        }
+        header #headertext{
+            margin-top: 100px;
+            padding-right: 30%;
+        }
+        #fit{
+            background-color: white;
+            width: 1000px;
+            height: 100px;
+            margin-left: 100px;
+        }
+        footer #address{
+            float: left;
+        }
+        footer #customer{
+            float: right;
+        }
+        #fit h3{
+            color: blue;
+            fo
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <div>
+                <h2>RUBATO</h2>
+            </div>
+            <p id="logotext">신뢰로 보답하는 루비토손해보험</p>
+        </div>
+        <div id="top">
+            <ul>
+                <li id="li1"><a href="#">로그인</a></li>
+                <li id="li2"><a href="#">회원가입</a></li>
+                <li id="li3"><a href="#">사이트맵</a></li>
+                <li><a href="#">회사소개</a></li>
+            </ul>
+        </div>
+        <p id="headertext">상단 헤더</p>
+    </header>
+        <nav>
+            <p>네비게이션 메뉴</p>
+        </nav>
+    <section>
+            <p>메인콘텐츠<p>
+    </section>
+    <aside>
+        <p>사이드바<p>
+    </aside>
+    <footer>
+        <p>하단 푸터</p>
+        <div id="fit">
+            <div id="address">
+                <p>루바토 손해보험(주)| 대표이사 : 홍길동 | 사업자번호 :123-12-123456</p>
+                <p>전화 : 02-123-1234 | 서울시 강남구 가나다동 123번지</p>
+                <p id="copy">Copyright by RUBATO Company All Right Reserved</p>
+            </div>
+            <div id="customer">
+                <h3>고객센터 1588-1234</h3>
+                <img src="dd.PNG">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

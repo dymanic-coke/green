@@ -1,0 +1,50 @@
+.list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.list li{
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+}
+.list img{
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 5;
+    width: 375px;
+    height: 250px;
+}
+.list .caption{
+    position: absolute;
+    top: 200px;
+    width: 375px;
+    height: 150px;
+    padding-top: 10px;
+    background: rgb(0,0,0,0.6);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+    text-align: center;
+}
+.list li:hover .caption{
+    opacity: 1;
+    transform: translateY(-100px);
+
+}
+.list .caption h1, .list .caption p{
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+}
+.caption h1{
+    font-size: 20px;
+}
+.caption a:link, .caption a:visited{
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}

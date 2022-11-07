@@ -1,0 +1,36 @@
+<html>
+    <script>
+        // 자식 클래스에서 상속 받아 오버라이드 진행
+        class LifeCycle{
+            // call 메소드를 통해 a/b/c 메소드 호출
+            call(){
+                this.a()
+                this.b()
+                this.c()
+            }
+
+            a(){
+                console.log('a() 메소드를 호출')
+            }
+            b(){
+                console.log('b() 메소드를 호출')
+            }
+            c(){
+                console.log('c() 메소드를 호출')
+            }
+        }
+
+        class Child extends LifeCycle{
+            // 자바와 다르게 오버라이드 할때 @Override를 넣지 않음
+            a(){
+                super.a()
+                console.log('자식 클래스의 a() 메소드 호출')
+            }
+        }
+
+        new Child().call()
+        // const f = new Child()
+        // f.call()
+        //위의 활용부의 단축형
+    </script>
+</html>

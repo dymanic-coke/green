@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>할 일 목록</h1>
+    <input id="todo" placeholder="할 일을 입력하세요">
+    <button id="add-button">추가하기</button>
+    <div id="todo-list">
+
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+
+        // body 안에 input/button/div 태그 선택
+        const input = document.querySelector('#todo')
+        const addbutton = document.querySelector('#add-button')
+        const todolist = document.querySelector('#todo-list')
+
+        //키값으로 추가 및 삭제를 하기위하여 변수로 지정
+        let keycount = 0
+
+        // 추가하기 작업에 대한 구성
+        const addTodo = function(){
+            // input 태그 안에 값을 안넣고 진행 했을경우 출력물
+            if(input.value.trim() === ''){
+                alert('할 일을 입력하세요')
+                return
+            }
+            //할일 추가를 위하여 태그 생성
+            const item = document.createElement('div')
+            const box = document.createElement('input')
+            const text = document.createElement('span')
+            const button = document.createElement('button')
+
+            const key = keycount
+            keycount += 1
+
+            //div 블록을 item 이라는 상수로 만들고 그 안에 input/span/button 태그들을 넣는다
+            item.setAttribute('data-key', key)
+            item.appendChild(box)
+            item.appendChild(text)
+            item.appendChild(button)
+            todolist.appendChild(item)
+
+            //item 상수안에 input태그(box)의 형태 구성
+            box.type = 'checkbox'
+            box.addEventListener('change', function(event){
+                item.style.textDecoration = event.target.checked ? 'line-through':''
+            })
+
+            //item 안에 span태그(text) 구성 = input에 들어간 값을 넣는다
+            text.textContent = input.value
+
+            //item 안에 button태그(button) 구성
+            button.textContent = '삭제하기'
+            button.addEventListener('click', function(){
+                removeTodo(key)
+            })
+            //초기값 설정도 있지만 추가를 하고 난후 input박스에 표시를 하기위한 값처리
+            input.value = ''
+        }
+
+        //버튼으로 작동하는 삭제 구성
+        const removeTodo = function(key){
+            //key 값으로 삭제할 키값를 찾고 그 키값을 가진 div(item)태그를 삭제
+            const item = document.querySelector(`[data-key = "${key}"]`)
+            todolist.removeChild(item)
+        }
+
+        //추가 하기 작업 진행 엔터와 클릭버튼 모두 활용 가능하게 만들기
+        addbutton.addEventListener('click', addTodo)
+        input.addEventListener('keyup', function(event){
+            const ENTER = 13
+            if(event.keyCode === ENTER){
+                addTodo()
+            }
+            
+        })
+    }) 
+</script>
+</html>

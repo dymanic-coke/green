@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin{
+            width: 200px;
+            height: 133px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+        .zombie{
+            transform: rotateZ(10deg);
+            -webkit-transform: rotateZ(10deg);
+        }
+        .letop .zombie{
+            transform-origin: left top;
+            -webkit-transform-origin: left top;
+        }
+        .ritop .zombie{
+            transform-origin: right top;
+            -webkit-transform-origin: right top;
+        }
+        .lebot .zombie{
+            transform-origin: left bottom;
+            -webkit-transform-origin: left bottom;
+        }
+        .ribot .zombie{
+            transform-origin: right bottom;
+            -webkit-transform-origin: right bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="letop">
+            <img src="zombie.jpg" class="zombie">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="ritop">
+            <img src="zombie.jpg" class="zombie">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="lebot">
+            <img src="zombie.jpg" class="zombie">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="ribot">
+            <img src="zombie.jpg" class="zombie">
+        </div>
+    </div>
+</body>
+</html>

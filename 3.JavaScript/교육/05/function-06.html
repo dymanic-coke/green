@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            // 최대값 최소값 구하기
+            //1. 최소값
+            function small(lay){
+                let a = lay[0]
+                for(const c of lay){ //lay 안에 있는 인덱스를 하나씩 꺼내 c에 넣기
+                    if(a > c){
+                        a = c
+                    }
+                }
+                return a
+            }
+
+            //2.최대값
+            function big(lay){
+                let z = lay[0]
+                for(const y of lay){
+                    if(z < y){
+                        z = y
+                    }
+                }
+                return z
+            }
+
+            const array = [30, 50, 70 , 200, 300, 2, 5, 394]
+
+            console.log(`${array}중에서`)
+            console.log(`최소값 = ${small(array)}`)
+            console.log(`${array}중에서`)
+            console.log(`최대값 = ${big(array)}`)
+        </script>
+    </head>
+</html>

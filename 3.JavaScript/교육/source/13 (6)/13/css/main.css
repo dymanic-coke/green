@@ -1,0 +1,182 @@
+/*메인 콘텐츠 */
+section#main {
+    width: 990px;
+    margin:auto;
+}
+/* 좌측 카테고리 + 메인 이미지 + 공지사항/주간 이벤트 */
+section#cat1 {
+    width:215px;
+    float:left;
+    margin-top:15px;  
+    font-weight:bold;
+}
+section#cat1 #cat_title {
+    padding:12px;
+    background-color:#8f8681;
+    /* background-color:#96c11f; */
+    color:#ffffff;
+    text-align:center;
+}
+section#cat1 li {
+    color:#915c4c;
+    /* color:#666666; */
+    padding:7px 0 7px 30px;
+    border-bottom: solid 1px #8f8681;
+    border-bottom: solid 1px #cccccc;
+}
+section#cat2 {
+    float:left;
+    margin-top:15px;
+}
+section#cat3 {
+    width:230px;
+    float: right;
+    margin-top:15px;
+}
+
+section#cat3 #latest_notice {
+    width:230px;
+    height:180px;
+    padding-left: 15px;
+    font-size: 11px;
+    font-weight: 11px;
+    padding-top: 40px;
+    background-image: url("../img/notice_01.png");
+    
+    background-repeat: no-repeat;
+}
+
+section#cat3 #latest_notice table {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+section#cat3 #latest_notice td {
+    padding-top: 5px;
+}
+
+section#cat3 #latest_notice td:hover {
+    /* color: #8f8681; */
+    color: white;
+    background-color: #8f8681;
+    padding:5px;
+    cursor: pointer;
+}
+/* section#cat3 #latest_notice {
+    width:230px;
+    height:161px;
+    padding-left: 2px;
+    font-size: 11px;
+    font-weight: 11px;
+    padding-top: 10px;
+    background-image: url("../img/NOTICE.jpg");
+    background-repeat: no-repeat;
+}
+section#cat3 #latest_notice ul {
+    padding: 42px 0 0 30px;
+    list-style-image: url("../img/dot.jpg");
+} */
+section#cat3 #week_event {
+    width:230px;
+    height: 191px;
+    margin-top:11px;
+    margin-left: 25px;
+    background-image: url("../img/notice_01_1.png");
+    background-repeat: no-repeat;
+}
+section#cat3 #week_event img {
+    margin: 58px 0 0 15px;
+}
+/* 스페셜 숍(special shop) */
+section#special_shop {
+    width: 592px;
+    height: 389px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    background-image: url("../img/specialshop_gift.png");
+    background-repeat: no-repeat;
+}
+section#special_shop ul {
+    margin: 60px 0 0 5px;
+}
+section#special_shop li {
+    display: inline;
+    margin: 0 2px;
+}
+section#special_shop img {
+    padding:20px;
+    border:solid 1px #915c4c;
+    /* border:solid 1px #cccccc; */
+}
+section#special_banner {
+    float:left;
+    margin:19px 0 0 5px
+}
+section#special_banner div {
+    width: 392px;
+    height: 129px;
+    margin-top:1px;
+}
+/* 스페셜 숍 우측의 배너 3개 */
+section#special_banner #banner1 {
+    padding-left: 1px;
+    align-items: right;
+    
+    background-image: url("../img/landscape.png");
+    background-repeat: no-repeat;
+}
+section#special_banner #banner2 {
+    background-image: url("../img/point_wallpaper.png");
+    background-repeat: no-repeat;
+}
+section#special_banner #banner3 {
+    background-image: url("../img/children.png");
+    background-repeat: no-repeat;
+}
+section#special_banner ul {
+    padding:6px 0 0 142px;
+}
+section#special_banner li {
+    display:inline;
+}
+/*신규상품*/
+section#new {
+    
+    margin: 40px 0 0 0;
+    padding-left: 120px;
+    /* margin-top: 20px; */
+    /* border-top: 2px solid #9bc32a; */
+    border-top: 2px solid #915c4c;
+    clear: both;
+}
+section#new h3 {
+    margin: 20px 0 0 35px;
+}
+section#new h3 span {
+    color: rgb(110,202,205);
+    /* color: #915c4c; */
+    /* color: #00a727; */
+}
+section#new .item{
+    float: left;
+    text-align: center;
+    margin: 20px 0 0 32px;
+}
+section#new .item .subject {
+    margin-top: 10px;
+    color: #915c4c;
+    /* color: #00a727; */
+}
+section#new .item .comment {
+    margin-top: 5px;
+    color: #32435f;
+    /* color: #888888; */
+}
+section#new .item .price {
+    margin-top: 5px;
+    font-weight: bold;
+}
+

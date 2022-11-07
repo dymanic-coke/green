@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jQuery.com/jQuery-3.6.0.min.js"></script>
+    <script>
+        onclick="window.open('img/prod-1.jpg' , '이미지 확대', 'width = 500, height = 500, location=no, status=no, scrollbars=yes'
+        $(document).ready(function(){
+            $('#panel').click(function(){
+                $(this).slideUp('slow');
+            });
+            $('#slide').click(function(){
+                $('#panel').slideDown(5000);
+            });
+            $('#flip').click(function(){
+                $('#panel').slideToggle('slow');
+            });
+            $('#stop').click(function(){
+                $('#panel').stop()
+            })
+        })
+    </script>
+    <style>
+        div{
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: 1px solid gray;
+        }
+        #panel{
+            padding: 70px;
+            display: none;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="slide">[오늘의 공지사항]</div>
+    <div id="panel">오늘은 일찍 끝나고 술이나 먹읍시다.<br>
+                    안주는 곱창으로 하겠습니다.</div>
+    <div id="flip">Toggle slide</div>
+    <p></p>
+    <button id="stop">Stop sliding</button>
+</body>
+</html>

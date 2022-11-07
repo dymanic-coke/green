@@ -1,0 +1,51 @@
+<html>
+    <script>
+        class Square{
+            #length
+            static #counter = 0
+
+            static get counter(){
+                return Square.#counter
+                // this.#counter 도 가능 한듯
+            
+            }
+            
+            constructor(length){
+                this.length = length
+                Square.#counter += 1
+            }
+
+            static periOf(length){
+                return 4 * length
+            }
+            static areaOf(length){
+                return length * length
+            }
+
+            get length(){
+                return this.#length
+            }
+            get peri(){
+                return 4* this.#length
+            }
+            get area(){
+                return this.#length * this.#length
+            }
+
+            set length(length){
+                if(length <=0){
+                    throw '한변의 길이가 0보다 커야 합니다.'
+                }
+                this.#length = length
+            }
+        }
+
+        const sq1 = new Square(10)
+        const sq2 = new Square(20)
+        const sq3 = new Square(30)
+        console.log(`지금 까지 생성된 Square 인스턴스는 ${Square.counter}건 입니다.`)
+        console.log(`한변의 길이가 20인 정사각형의 둘레는 ${Square.periOf(20)}입니다.`)
+        console.log(`한 변의 길이가 30인 정사각형의 넓이는 ${Square.areaOf(30)}입니다.`)
+
+    </script>
+</html>

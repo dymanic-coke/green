@@ -1,0 +1,27 @@
+<html>
+    <script>
+        class LifeCycle{
+
+            call(){
+                this.a()
+                this.b()
+                this.c()
+            }
+
+            a(){
+                console.log('a() 메소드를 호출')
+            }
+            b(){
+                console.log('b() 메소드를 호출')
+            }
+            c(){
+                console.log('c() 메소드를 호출')
+            }
+        }
+
+        new LifeCycle().call()
+        // const f = new LifeCycle()
+        // f.call()
+        //위와 같은 구분의 단축형
+    </script>
+</html>

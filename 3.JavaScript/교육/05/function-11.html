@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            //기본 매개변수 초기값 적용
+            
+            function ex(staff, pay=10600, time= 40){
+                console.log(`직급 : ${staff}`)
+                console.log(`시급 : ${pay}`)
+                console.log(`근무시간 : ${time}`)
+                console.log(`총 급여 : ${pay * time}`)
+                console.log("")
+            }
+
+            ex('알바')
+            ex('정직원',12000)
+            ex('슈퍼바이저',15000,52)
+        </script>
+    </head>
+</html>

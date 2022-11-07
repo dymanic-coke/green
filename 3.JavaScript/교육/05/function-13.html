@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            //익명 함수 콜백
+
+            function ex(test){
+                for(i=0; i<=10; i++){
+                    test(i)
+                }
+            }
+
+            ex(function(i){
+                console.log(`${i}번째 함수 호출`)
+            })
+        </script>
+    </head>
+</html>

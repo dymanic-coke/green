@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            //Array.isArray() 메소드를 활용
+
+            function ex(a,...b){
+            let out
+            let first
+
+            if(Array.isArray(a)){
+                out = a[0]
+                first = a
+            } else if(typeof(a) === 'number'){
+                out = a
+                first = b
+            }
+
+            //최대값 구하기
+
+                for(const x of first){
+                if(out < x){
+                    out = x
+                    }
+                }
+                return out
+            }
+
+        console.log(`max(배열) = ${ex([2, 5, 7, 10, 30, 25])}`)
+        console.log(`max(숫자,...) = ${ex(2, 5, 7, 10, 30, 25)}`)
+        </script>
+    </head>
+</html>

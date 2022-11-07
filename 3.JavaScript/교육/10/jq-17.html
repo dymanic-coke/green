@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jQuery.com/jQuery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/img-slider-view@1.0.4/src/index.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.images').slick();
+        });
+    </script>
+</head>
+<body>
+    <div class="slide">
+        <div class="images">
+            <img src="basketball.jpg" class="image">
+            <img src="football.jpg" class="image">
+            <img src="soccer.jpg" class="image">
+            <img src="baseball.jpg" class="image">
+            <div class="image">
+                <h1>이미지가 없음</h1>
+                <p>이미지를 나중에 넣어주세요</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

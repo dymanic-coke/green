@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jQuery.com/jQuery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('ans').hide()
+            $('p.q1').click(function(){
+                $('ans.q1').show()
+            })
+            $('ans.q1').click(function(){
+                $(this).hide()
+            })
+            $('p.q2').click(function(){
+                $('ans.q2').show()
+            })
+            $('ans.q2').click(function(){
+                $(this).hide()
+            })
+            $('button#hide').click(function(){
+                $('div').hide()
+            })
+            $('button#show').click(function(){
+                $('div').show()
+            })
+        })
+    </script>
+    <style>
+        button{
+            display: block;
+            width: 150px;
+            height: 150px;
+            color: white;
+            background-color: black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h2>질문 1: 대한민국의 수도는 어디입니까?</h2>
+    <p class="q1">[정답보기]</p>
+    <ans class="q1">정답 : <strong>서울</strong></ans>
+    <br>
+    <h2>질문 2: 미국(미합중국)의 수도는 어디입니까?</h2>
+    <p class="q2">[정답보기]</p>
+    <ans class="q2">정답 : <strong>워싱턴D.C</strong></ans>
+    </div>
+    <button id="hide">모두 숨기기</button>
+    <button id="show">모두 보기</button>
+</body>
+</html>

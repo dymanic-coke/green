@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델 연습</title>
+    <style>
+        body{
+            font-size: 13px;
+        }
+        .textbody{
+            border: 4px solid black;
+            margin: 0;
+        }
+        nav h2{
+            float: left;
+            display: inline;
+            margin-left: 10px;
+            margin-right: 200px;
+            color: white;
+            font-size: 25px;
+        }
+        nav{
+            width: 100%;
+            height: 80px;
+            background-color: #069;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+
+        nav ul li{
+            display: inline-block;
+            margin: 30px 10px;
+        }
+        nav ul a{    
+            color: white;
+            text-decoration: none;
+        }
+        .solidline{
+            margin: 10px 50px 10px 5px;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 15px 5px;
+        }
+        .dottedline{
+            margin: 10px 50px 10px 5px;
+            border: 1px dotted blue;
+            border-radius: 15px;
+            padding: 15px 5px;
+        }
+        .roundline{
+            margin: 10px 50px 10px 5px;
+            border: 1px solid green;
+            border-top-left-radius: 15px 15px;
+            border-bottom-right-radius: 15px 15px;
+            padding: 15px 5px;
+        }
+        div{
+            line-height: 1.2;
+        }
+        
+        .dog{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .dogkind{
+            font-weight: bold;
+            color: purple;
+        }
+        .insidetext{
+            padding-left: 30px;
+        }
+        .copy{
+            background-color: black;
+            width: 100%;
+            height: 40px;
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>애완견 종류</h2>
+        <ul>
+            <li><a href="#ad1">애완견 종류</a></li>
+            <li><a href="#ad2">입양하기</a></li>
+            <li><a href="#ad3">건강돌보기</a></li>
+            <li><a href="#">더불어살기</a></li>
+        </ul>
+    </nav>
+    <div class="textbody">      
+        <div class="solidline" id="ad1">
+            <p class="dog"><img src="light.png" alt="">활달한 강아지</p>
+            <p class="dogkind">요크셔 테리어<p>
+            <p class="insidetext">생기있고 활달한 성질을 가지고 있으며 자신보다 몸집이 큰 개나 집에 들어온 침입자를
+                    겁내는 일이 없어 좋은 번견이고 우리나라 최고의 가정견으로 자리잡고 있다.</p>
+            <p class="dogkind">말티즈</li>
+            <p class="insidetext">애정이 많고, 충실하며 활발한 성격을 소유하고 있다. 이 좋은 1급 가정견으로 요크셔테이러와 함께 우리나라 최고의 가정견으로 자리잡고 있다.</p>
+            <p class="dogkind">포메 라이언</li>
+            <p class="insidetext">활기차고 명랑한 개로 유명하고, 걷는 모습이 우아하다. 충실하고 우호적인 성격이 가장 먼저 거론된다.</p>    
+            <p class="dogkind">골든 리트리버</li>
+            <p class="insidetext">이 견종은 충성심이 강하고 성격이 활달하여 어린아이나 여성이 상대하기에 적합한 견종이다. 참을성 또한 강하여 현재는 실내에서도 많이 길러지고 있다.</p>
+        </div>
+        <div class="dottedline" id="ad2">
+            <p class="dog"><img src="light.png" alt="">온순한 강아지</p>
+            <p class="dogkind">쉬즈</p>
+            <p class="insidetext">얼굴에서 풍기는 모습처럼 온순. 쉽게 친숙해지고 우호적이며, 어린아이나 여성들이 기르기에 적합한 견종이다.</p>
+            <p class="dogkind">퍼그</p>
+            <p class="insidetext">매우 사려가 깊고 사랑스러운 견종이며 그다지 손질이 필요하지 않고 식사량에 비해 많은 운동량이 필요하지 않다.</p>
+            <p class="dogkind">래브라도 리트리버</p>
+            <p class="insidetext">침착하고 영리하여 어린이들을 안심하고 맡길 수 있다. 사람을 즐겁게 해주려는 성질이 있다. 공을 가지고 노는 것을 가장 좋아한다. 현재 맹인 안내견과 마약견으로 사용중이다.
+                온순한 강아지를 좋아하는 분에게는 적합한 견종이다.</p>
+        </div>
+        <div class="roundline"id="ad3">  
+            <p class="dog"><img src="light.png" alt="">사납지만 복종적인 강아지</p>
+            <p class="dogkind">미니어쳐핀셔</p>
+            <p class="insidetext">생기있고 활달한 성질을 가지고 있으며 자신보다 몸집이 큰 개나 집에 들어온 침입자를
+                겁내는 일이 없어 좋은 번견이고 우리나라 최고의 가정견으로 자리잡고 있다.</p>
+            <p class="dogkind">푸들</p>
+            <p class="insidetext">생기있고 활달한 성질을 가지고 있으며 자신보다 몸집이 큰 개나 집에 들어온 침입자를
+                겁내는 일이 없어 좋은 번견이고 우리나라 최고의 가정견으로 자리잡고 있다.</p>
+            <p class="dogkind">폭스테리어</p>
+            <p class="insidetext">생기있고 활달한 성질을 가지고 있으며 자신보다 몸집이 큰 개나 집에 들어온 침입자를
+                겁내는 일이 없어 좋은 번견이고 우리나라 최고의 가정견으로 자리잡고 있다.</p>
+        </div>
+        <div>
+            <p style="font-size: 15px; font-weight: bold; padding-left: 10px;">건강한 강아지는</p>
+            <ul>
+            <li>코가 젖어있고 눈꼽이 없어야 합니다.</li>
+            <li>털에 윤기가 있는 것을 골라야 합니다.</li>
+            <li>입에서 고약한 냄새가 나면 병이 있다는 증거입니다.</li>
+            <li>가장 활발하게 움직이는 녀석을 고르는게 좋습니다.</li>
+            <li>강아지들 중에서 적당한 체구를 유지한 강아지가 좋습니다.</li>
+            </ul>
+        </div>
+    </div>    
+    <p class="copy">copyright 2012 funnycom</p>
+</body>
+</html>

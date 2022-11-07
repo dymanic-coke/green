@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            //콜백 함수 사용
+
+            function calltime(k){
+                for(let i=0; i<10; i++){
+                    k(i)
+                }
+            }
+
+            function print(i){
+                console.log(`${i}번째 함수 호출`)
+            }
+
+            calltime(print)
+        </script>
+    </head>
+</html>

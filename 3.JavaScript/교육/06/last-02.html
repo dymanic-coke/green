@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            const object = {
+                name : '혼자 공부하는 파이썬',
+                price : 18000,
+                publisher : '한빛미디어'
+            }
+            //객체 기본 속성을 지정
+            object.name = object.name !== undefined ? object.name: '제목 미정'
+            object.author = object.author !== undefined ? object.author : '작자 미상'
+            //객체 내에 네임이 들어 있다면 유지 아니라면 '제목미정'으로 지정
+            //객체 내에 작가가 들어 있다면 유지 아니라면 '작자미상'으로 지정
+
+            console.log(JSON.stringify(object, null, 2))
+            
+            
+        </script>
+    </head>
+</html>

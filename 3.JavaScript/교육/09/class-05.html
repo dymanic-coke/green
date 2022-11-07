@@ -1,0 +1,34 @@
+<html>
+    <script>
+        function createstudent(name, kor , eng, math, science){
+            return{
+                name: name,
+                kor: kor,
+                eng: eng,
+                math: math,
+                science: science,
+
+            getSum(){
+                return this.kor + this.eng + this.math + this.science
+            },
+
+            getAvg(){
+                return this.getSum()/4
+            },
+            toString(){
+                return `${this.name}\t${this.getAvg()}점\t${this.getAvg()}점\n`
+            }
+            }
+        }
+        const student = []
+        student.push(createstudent('구름',87,98,88,90))
+        student.push(createstudent('별',92,98,96,88))
+        student.push(createstudent('겨울',76,96,94,86))
+        student.push(createstudent('바다',98,52,98,93))
+        let output = '이름\t총점\t평균\n'
+        for(const f of student){
+            output += f.toString()
+        }
+        console.log(output)
+    </script>
+</html>

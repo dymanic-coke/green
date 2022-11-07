@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <style>
+        table, th, td{
+            border: 1px solid gray;
+        }
+        th, td{
+            width: 80px;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>제주특별자치도 학교현황(2015.4.1 기준)</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col span="2" style="background-color: blue;">
+            <col style="background-color: yellow;">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>학교수</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>교원수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>유치원</th>
+                <td align="right">117</td>
+                <td align="right">252</td>
+                <td align="right">5,547</td>
+                <td align="right">474</td>
+            </tr>
+            <tr>
+                <th>초등학교</th>
+                <td align="right">111</td>
+                <td align="right">1720</td>
+                <td align="right">37,686</td>
+                <td align="right">2,632</td>
+            </tr>
+            <tr>
+                <th>중학교</th>
+                <td align="right">44</td>
+                <td align="right">699</td>
+                <td align="right">21,274</td>
+                <td align="right">1412</td>
+            </tr>
+            <tr>
+                <th>고등학교</th>
+                <td align="right">29</td>
+                <td align="right">676</td>
+                <td align="right">22,019</td>
+                <td align="right">1,433</td>
+            </tr>
+            <tr>
+                <th>특수학교</th>
+                <td align="right">3</td>
+                <td align="right">90</td>
+                <td align="right">428</td>
+                <td align="right">160</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td align="right">300</td>
+                <td align="right">3,437</td>
+                <td align="right">86,954</td>
+                <td align="right">6,111</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

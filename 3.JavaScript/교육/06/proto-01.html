@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <script>
+            Number.prototype.wtf = function(n=2){
+                return this.valueOf()**n
+            }
+
+            const f = 3
+            console.log('f.wtf():', f.wtf())
+            console.log('f.wtf(4):', f.wtf(4))
+            console.log('f.wtf(8):', f.wtf(8))
+        </script>
+    </head>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            const max = function(array){
+                let output = array[0]
+                for(const sec of array){
+                    if(output < sec){
+                        output = sec
+                    }
+                }
+                return output
+            }
+            console.log(max([1,2,44,4]))
+        </script>
+    </head>
+</html>

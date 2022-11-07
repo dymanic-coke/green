@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 120px;
+    background-color: ivory;
+    text-align: center;
+    padding: 35px;
+}
+
+#container{
+    position: absolute;
+    left: 25%;
+    width: 332px;
+    margin: 50px 1.5%;
+    background-color: rgb(9, 100, 160);
+}
+.card{
+    position: relative;
+    width: 302px;
+    height: 350px;
+    margin: 20px 15px;
+    border: 1px solid gray;
+    background-color: #fff;
+}
+.word{
+    position: absolute;
+    left: 35px;
+    top: 210px;
+    padding: 10px;
+    text-align: center;
+}
+.word#jindo{
+    position: absolute;
+    left: 92px;
+    top: 210px;
+}
+.word#samo{
+    position: absolute;
+    left: 92px;
+    top: 210px;
+}
+@media screen and (min-width:768px) and (max-width:1719px) {
+    #container{
+        position: absolute;
+        left: 18%;
+        width: 570px;
+        margin: 50px 1.5%;
+    }
+    .card{
+        position: relative;
+        width: 530px;
+        height: 202px;
+        margin: 20px 20px;
+        border: 1px solid gray;
+        background-color: #fff;
+    }
+    .word{
+        position: absolute;
+        width: 200px;
+        left: 290px;
+        top: 30px;
+        width: 250px;
+        text-align: center;
+    }
+    .word#jindo{
+        position: absolute;
+        left: 315px;
+        top: 30px;
+        width: 200px;
+    }
+    .word#samo{
+        position: absolute;
+        left: 315px;
+        top: 30px;
+        width: 200px;
+    }
+}
+@media screen and (min-width:1720px) {
+    #container{
+        position: absolute;
+        left: 5px;
+        width: 1710px;
+        margin: 50px auto;
+    }
+    .card{
+        position: relative;
+        float: left;
+        width: 550px;
+        height: 202px;
+        margin: 10px;
+        border: 1px solid gray;
+        background-color: #fff;
+    }
+    .word{
+        position: absolute;
+        left: 300px;
+        top: 33px;
+        text-align: center;
+        width: 250px;
+    }
+    .word#jindo{
+        position: absolute;
+        left: 300px;
+        top: 33px;
+        width: 250px;
+    }
+    .word#samo{
+        position: absolute;
+        left: 300px;
+        top: 33px;
+        width: 250px;
+    }
+}

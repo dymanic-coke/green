@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jQuery.com/jQuery-3.6.0.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            var width = 430;
+            var height = 300;
+            var current = 0;
+
+            var moveTo = function(){
+                $('.images').animate({
+                    left: -current * width
+                }, 1000);
+            };
+
+            var imageLength = $('.slide').find('.image').length;
+            
+            for(let i=0; i<imageLength; i++){
+                $('<button></button>')
+                    .attr('data-position', i)
+                    .text(i)
+                    .click(function(){
+                        current = $(this).attr('data-position');
+                        moveTo();
+                    })
+                    .insertBefore('.slide');
+            };
+
+            $('.slide').css({
+                position: 'relative',
+                width : width,
+                height : height,
+                overflow: 'hidden'
+            });
+
+            $('.images').css({
+                position: 'absolute',
+                width: width * imageLength
+            });
+
+            $('.image').css({
+                margin: 0,
+                padding: 0,
+                width: width,
+                height: height,
+                display: 'block',
+                float: 'left'
+            });
+            
+            setInterval(function(){
+                current = current +1;
+                current = current % imageLength;
+                moveTo();
+            },3000);
+        })
+    </script>
+</head>
+<body>
+    <div class="slide">
+        <div class="images">
+            <img src="basketball.jpg?text=image_0" class="image" >
+            <img src="football.jpg?text=image_1" class="image">
+            <img src="soccer.jpg?text=image_2" class="image">
+            <img src="baseball.jpg?text=image_3" class="image">
+            <div class="image">
+                <h1>이미지가 없음</h1>
+                <p>이미지를 나중에 넣어주세요</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <script>
+        function test(){
+            try{
+                alert('try 구문 위치')
+                throw "예외 발생"
+            }catch(exception){
+                alert('catch 구문 위치')
+                return
+            }finally{
+                alert('finally 구문 위치')
+            }
+        }
+        test()
+    </script>
+</html>

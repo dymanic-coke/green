@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const input = document.querySelector('input')
+            const span = document.querySelector('span')
+            const sel = document.querySelector('select')
+
+            let 입력값
+            let 상수 = 10
+
+            const cal = function(){
+                span.textContent = (입력값 * 상수).toFixed(1)
+            }
+
+            sel.addEventListener('change', function(event){
+                const op = this.options
+                const index = this.options.selectedIndex
+                상수 = Number(op[index].value)
+                cal()
+            })
+            input.addEventListener('keyup', function(event){
+                입력값 = Number(this.value)
+                cal()
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="text">cm = 
+    <span></span>
+    <select>
+        <option value="10">mm</option>
+        <option value="0.01">m</option>
+        <option value="0.393701">inch</option>
+    </select>
+</body>
+</html>

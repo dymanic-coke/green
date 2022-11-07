@@ -1,0 +1,19 @@
+<html>
+    <script>
+        let output = ''
+
+        let num = Number(prompt('입력'))
+
+        for(let i = 1; i <= num; i++){
+            for(let y = num; y > i; y--){
+                output += ' '
+            }
+            for(let f = 0; f<2*i-1; f++){
+                output +='*'
+            }
+            output += '\n'
+        }
+
+        console.log(output)
+    </script>
+</html>

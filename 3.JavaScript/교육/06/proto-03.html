@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            String.prototype.wtf = function(data){
+                return this.indexOf(data) >= 0
+            }
+            Array.prototype.wtf = function(data){
+                return this.indexOf(data) >= 0
+            }
+
+            const f = '동해물과 백두산이 마르고 닳도록'
+            console.log('모란 in 애국가 1절:', f.wtf('모란'))
+            console.log('백두산 in 애국가 1절:', f.wtf('백두산'))
+
+            const c = [1,2,3,4,5,6]
+            console.log('4 in c배열:', c.wtf(4))
+            console.log('0 in c배열:', c.wtf(0))
+        </script>
+    </head>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            //break 사용
+
+            let a = 0
+
+            while(true){
+                console.log(`${a+1}번째 반복중입니다.`)
+                a++
+                const continue1 = confirm("반복 하시겠습니까?")
+                if(!continue1){
+                    break
+                }
+            }
+            console.log('시스템을 종료합니다.')
+        </script>
+    </head>
+</html>

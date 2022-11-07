@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 20px;
+            height: 60px;
+            -webkit-animation-name: kkk;
+            animation-name: kkk;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            animation-direction: normal;
+            -webkit-animation-direction: normal;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+        @-webkit-keyframes kkk{
+            from{
+                width: 200px;
+                background-color: yellow;
+                opacity: 0.5;
+                transform: scale(0.5) rotate(0deg);
+            }
+            to{
+                width: 400px;
+                background-color: aqua;
+                opacity: 1;
+                transform: scale(1) rotate(360deg);
+            }
+        }
+        @keyframes kkk{
+            from{
+                width: 200px;
+                background-color: yellow;
+                opacity: 0.5;
+                transform: scale(0.5) rotate(0deg);
+            }
+            to{
+                width: 400px;
+                background-color: aqua;
+                opacity: 1;
+                transform: scale(1) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>CSS3 애니매이션</h3>
+    </div>
+</body>
+</html>

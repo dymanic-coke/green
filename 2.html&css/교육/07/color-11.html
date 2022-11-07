@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선형 그라데이션</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+        }
+        .grad{
+            background: blue;
+            background-image: -webkit-linear-gradient(top, blue, white 30%, blue);
+            background-image: -moz-linear-gradient(bottom, blue, white 30%, blue);
+            background: -o-linear-gradient(bottom, blue, white 30%, blue);
+            background: linear-gradient(to bottom, blue, white 30%, blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+</body>
+</html>

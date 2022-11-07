@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            //윤년 계산식
+            while(confirm('윤년 확인 계산기')){
+            const a = Number(prompt('연도를 넣으세요'))
+
+            function f(a){
+                return (a%4 === 0) &&(a%100 !== 0) || ( a%400 === 0)
+            }
+
+            if(f(a) === true){
+                c = '윤년입니다.'
+            } else{
+                c = '윤년이 아닙니다.'
+            }
+            alert(`${a}년은 윤년입니까? = ${c}`)
+        }
+        alert('윤년 확인 계산기 종료')
+        </script>
+    </head>
+</html>

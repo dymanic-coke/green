@@ -1,0 +1,12 @@
+<html>
+    <script>
+        const name = prompt('이름').split(' ');
+        const score = prompt('성적').split(' ');
+        const namescore = {};
+
+        for(let i= 0; i<name.length; i++){
+            namescore[name[i]] = Number(score[i]);
+        }
+        console.log(namescore)
+    </script>
+</html>

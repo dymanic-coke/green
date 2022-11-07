@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            //중첩 반복문으로 * 피라미드 만들기
+        while(confirm('피라미드 만들기를 시작할까요?')){
+            let a = ''
+            const b = Number(prompt('몇층짜리 피라미드를 만들까요?'))
+            for(let i=1;i< b+1;i++){
+                for(let j =1;j<=i; j++){
+                    a += '*'
+                }
+                a += '\n'
+            }
+            alert(a)
+        }
+        alert('-------------종료합니다.---------------')
+        </script>
+    </head>
+</html>

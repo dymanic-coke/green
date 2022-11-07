@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            //타이머 함수 활용
+
+            setTimeout(function(){
+                console.log('타이머를 시작합니다.')
+            }, 1*1000)
+            
+            let count = 1
+            let timer
+            timer = setInterval(function(){
+                console.log(`카운트다운 : ${count}`)
+                count++
+            },1*1000)
+            setTimeout(function(){
+                console.log('타이머를 종료합니다.')
+                clearInterval(timer)
+            }, 10*1000)
+
+        </script>
+    </head>
+</html>

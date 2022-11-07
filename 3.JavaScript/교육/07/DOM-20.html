@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const sel = document.querySelector('select')
+            const p = document.querySelector('p')
+
+            sel.addEventListener('change', function(event){
+                const ops = this.options
+                const list = []
+                for(const f of ops){
+                    if(f.selected){
+                        list.push(f.textContent)
+                    }
+                }
+                p.textContent = `선택 : ${list.join('+')}`
+            })
+        })
+    </script>
+</head>
+<body>
+    <select multiple>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>오뎅</option>
+        <option>튀김</option>
+    </select>
+    <p></p>
+</body>
+</html>
